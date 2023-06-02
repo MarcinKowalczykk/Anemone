@@ -2,20 +2,459 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagłówek strony</title>
+    <title>Anemone</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
     />
   </head>
   <body>
-    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
-    <include src="./partials/example.html"></include>
+    <header class="">
+      <div class="container">
+        <a href="/index.html" class="logo" id="">
+          <svg class="">
+            <use href="anemone_logo"></use>
+          </svg>
+        </a>
+        <nav class="">
+          <ul class="">
+            <li>
+              <a href="">Anemone</a>
+            </li>
+            <li>
+              <a href="">About us</a>
+            </li>
+            <li>
+              <a href="">Store</a>
+            </li>
+            <li>
+              <a href="">Delivery</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <button  type="button" data-modal-open>
+          <!-- <svg>
+            <use href="ścieżka_do_ikony_telefonu"></use>        
+         </svg> -->                  
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Anemone</h1>
+          <h2>flower studio</h2>
+          <div class="hero__img">
+            <picture>
+              <source media="(min-width:1280px)" srcset="link 2x, link 1x" type="image/webp" />
+              <source media="(min-width:768px)" srcset="link 2x, link 1x" type="image/webp" />
+              <source media="(max-width:767.98px)" srcset="link 2x, link 1x" type="image/webp" />
+              <img src="" alt="" width="" height="" />
+            </picture>
+          </div>
+          <button data-modal-open class="" type="button">
+            <svg class="" width="" height="">
+              <use class="" href="shop_now_svg-mobile"></use>
+              <use class="" href="shop_now_svg-tablet"></use>
+              <use class="" href="shop_now_svg-desktop"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <h2>ABOUT</h2>
+          <div>
+            <p>
+              We are a minimalistic flower studio. We love people and flowers. Therefore, every day
+              we give people the beauty and joy creating stylish and modern masterpieces. Every
+              bouquet we create is unique as you are.
+            </p>
+            <picture>
+              <source
+                media="(min-width:1280px)"
+                srcset="./img/image-about-desktop@2x.png 2x, ./img/image-about-desktop@1x.png 1x"
+                type="image/png"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="./img/image-about-tablet@2x.png 2x, ./img/image-about-tablet@1x.png 1x"
+                type="image/png"
+              />
+              <source
+                media="(max-width:767.98px)"
+                srcset="./img/image-about-mobile@2x.png 2x, ./img/image-about-mobile@1x.png 1x"
+                type="image/png"
+              />
+              <img src="/img/image-about-desktop@1x.png" alt="flowers" width="632" height="344" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="store">
+        <div>
+          <h2>STORE</h2>
+          <ul>
+            <li>
+              <div>
+                <picture>
+                  <source
+                    media="(min-width:1280px)"
+                    srcset="./img/bouquet3-desktop@2x.png 2x, ./img/bouquet3-desktop@1x.png 1x"
+                    type="image/png"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./img/bouquet3-tablet@2x.jpg 2x, ./img/bouquet3-tablet@1x.jpg 1x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width:767.98px)"
+                    srcset="./img/bouquet3-mobile@2x.jpg 2x, ./img/bouquet3-mobile@1x.jpg 1x"
+                    type="image/jpg"
+                  />
+                  <img src="./img/bouquet3-desktop@1x.png" alt="flower compliments" />
+                </picture>
+                <h3>compliments</h3>
+                <p>from $15</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <picture>
+                  <source
+                    media="(min-width:1280px)"
+                    srcset="./img/bouquet1-desktop@2x.jpg 2x, ./img/bouquet1-desktop@1x.jpg 1x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./img/bouquet1-tablet@2x.jpg 2x, ./img/bouquet1-tablet@1x.jpg 1x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width:767.98px)"
+                    srcset="./img/bouquet1-mobile@2x.jpg 2x, ./img/bouquet1-mobile@1x.jpg 1x"
+                    type="image/jpg"
+                  />
+                  <img src="./img/bouquet1-desktop@1x.png" alt="flower size S" />
+                </picture>
+                <h3>bouquets size S</h3>
+                <p>from $25</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <picture>
+                  <source
+                    media="(min-width:1280px)"
+                    srcset="./img/bouquet2-desktop@2x.jpg 2x, ./img/bouquet2-desktop@1x.jpg 1x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./img/bouquet2-tablet@2x.jpg 2x, ./img/bouquet2-tablet@1x.jpg 1x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width:767.98px)"
+                    srcset="./img/bouquet2-mobile@2x.jpg 2x, ./img/bouquet2-mobile@1x.jpg 1x"
+                    type="image/jpg"
+                  />
+                  <img src="./img/bouquet2-desktop@1x.png" alt="flower size M" />
+                </picture>
+                <h3>bouquets size M</h3>
+                <p>from $45</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <picture>
+                  <source
+                    media="(min-width:1280px)"
+                    srcset="./img/bouquet4-desktop@2x.jpg 2x, ./img/bouquet4-desktop@1x.jpg 1x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./img/bouquet4-tablet@2x.jpg 2x, ./img/bouquet4-tablet@1x.jpg 1x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width:767.98px)"
+                    srcset="./img/bouquet4-mobile@2x.jpg 2x, ./img/bouquet4-mobile@1x.jpg 1x"
+                    type="image/jpg"
+                  />
+                  <img src="./img/bouquet4-desktop@1x.png" alt="flower size L" />
+                </picture>
+                <h3>bouquets size L</h3>
+                <p>from $60</p>
+              </div>
+            </li>
+          </ul>
+          <button type="button" data-modal-open>Order flowers</button>
+        </div>
+      </section>
+      <section class="delivery">
+        <div class="container">
+          <h2>DELIVERY</h2>
+          <ul>
+            <li>
+              <div>1</div>
+              <p>Choose your bouquet and make an order on website</p>
+            </li>
+            <li>
+              <div>2</div>
+              <p>
+                Wait for the call to clarify the details of the order. You can pay online or to the
+                courier
+              </p>
+            </li>
+            <li>
+              <div>3</div>
+              <p>Wait for the delivery at the selected time or pick up the order from the store</p>
+            </li>
+            <li>
+              <div>4</div>
+              <p>Make someone happy or enjoy yourself</p>
+            </li>
+          </ul>
+        </div>
+        <picture>
+          <source
+            media="(min-width:1280px)"
+            srcset="./img/image-delivery-desktop@2x.jpg 2x, ./img/image-delivery-desktop@1x.jpg 1x"
+            type="image/jpg"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./img/image-delivery-tablet@2x.jpg 2x, ./img/image-delivery-tablet@1x.jpg 1x"
+            type="image/jpg"
+          />
+          <source
+            media="(max-width:767.98px)"
+            srcset="./img/image-delivery-mobile@2x.jpg 2x, ./img/image-delivery-mobile@1x.jpg 1x"
+            type="image/jpg"
+          />
+          <img src="./img/image-delivery-desktop@1x.jpg" alt="flowers" width="1280" height="391" />
+        </picture>
+      </section>
+      <section class="blog">
+        <div class="container">
+          <h2>BLOG</h2>
+          <div>
+            <picture>
+              <source
+                media="(min-width:1280px)"
+                srcset="
+                  ./img/flowers-image2-desktop@2x.jpg 2x,
+                  ./img/flowers-image2-desktop@1x.jpg 1x
+                "
+                type="image/jpg"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./img/flowers-image2-tablet@2x.jpg 2x,
+                  ./img/flowers-image2-tablet@1x.jpg 1x
+                "
+                type="image/jpg"
+              />
+              <source
+                media="(max-width:767.98px)"
+                srcset="
+                  ./img/flowers-image2-mobile@2x.jpg 2x,
+                  ./img/flowers-image2-mobile@1x.jpg 1x
+                "
+                type="image/jpg"
+              />
+              <img src="flowers-image2-desktop@1x.jpg" alt="flowers" width="390" height="421" />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                media="(min-width:1280px)"
+                srcset="
+                  ./img/flowers-image1-desktop@2x.jpg 2x,
+                  ./img/flowers-image1-desktop@1x.jpg 1x
+                "
+                type="image/jpg"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./img/flowers-image1-tablet@2x.jpg 2x,
+                  ./img/flowers-image1-tablet@1x.jpg 1x
+                "
+                type="image/jpg"
+              />
+              <source
+                media="(max-width:767.98px)"
+                srcset="
+                  ./img/flowers-image1-mobile@2x.jpg 2x,
+                  ./img/flowers-image1-mobile@1x.jpg 1x
+                "
+                type="image/jpg"
+              />
+              <img
+                src="./img/flowers-image1-desktop@1x.jpg"
+                alt="flowers"
+                width="390"
+                height="421"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                media="(min-width:1280px)"
+                srcset="
+                  ./img/flowers-image3-desktop@2x.jpg 2x,
+                  ./img/flowers-image3-desktop@1x.jpg 1x
+                "
+                type="image/jpg"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./img/flowers-image3-tablet@2x.jpg 2x,
+                  ./img/flowers-image3-tablet@1x.jpg 1x
+                "
+                type="image/jpg"
+              />
+              <source
+                media="(max-width:767.98px)"
+                srcset="
+                  ./img/flowers-image3-mobile@2x.jpg 2x,
+                  ./img/flowers-image3-mobile@1x.jpg 1x
+                "
+                type="image/jpg"
+              />
+              <img
+                src="./img/flowers-image3-desktop@1x.jpg"
+                alt="flowers"
+                width="390"
+                height="421"
+              />
+            </picture>
+          </div>
+          <p>Follow to our newsletter</p>
+          <button data-modal-open>Subscribe</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer__logo">
+          <a href="/index.html">
+            <svg class="footer__logo--icon">
+              <use href="logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__nav">
+          <nav>
+            <p>Navigation</p>
+            <ul>
+              <li>
+                <a href="/index.html">Anemone</a>
+              </li>
+              <li>
+                <a href="#about-us">About us</a>
+              </li>
+              <li>
+                <a href="#store">Store</a>
+              </li>
+              <li>
+                <a href="#delivery">Delivery</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="opening-times">
+          <p>Opening times</p>
+          <p>Every day<br />09:00-22:00</p>
+        </div>
+        <div class="Contacts">
+          <adress>
+            <p>Contacts</p>
+            <ul>
+              <li><a href="tel:+380631234567">+38 063 123 45 67</a></li>
+              <li><a href="mailto:anemonestudio@example.com">anemonestudio@example.com</a></li>
+              <li>
+                <a
+                  href="https://goo.gl/maps/vm8GR5CcjpBVpuev8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Reitarska Street, 11 Kyiv, Ukraine</a
+                >
+              </li>
+            </ul>
+          </adress>
+        </div>
+        <div class="footer__socials">
+          <ul>
+            <li>
+              <a href="">
+                <svg>
+                  <use href="facebook_icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg>
+                  <use href="insta_icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Modal contact us - start -->
+    <div data-modal-open class="backdrop is-hidden">
+      <div class="modal">
+        <div class="modal__form">
+          <button data-modal-close type="button" class="close-btn">
+            <svg width="18" height="18">
+              <use href="#ścieżka_do_ikony_close"></use>
+            </svg>
+          </button>
+          <header class="modal__header">Contact us</header>
+          <div class="modal__body">
+            <p class="modal__description">
+              If you have any additional questions or you want to clarify something before you make
+              an order please fill in your contact details. We will call you back.
+            </p>
 
-    <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
-    <script src="./index.js" type="module"></script>
+            <ul class="modal__list">
+              <li class="modal__list__item">
+                <label for="username">Name</label>
+                <input/>
+              </li>
+              <li class="modal__list__item">
+                <label for="email">Email</label>
+                <input/>
+              </li>
+            </ul>
+            <button data-action="send" type="submit" class="klasa_buttona_do_dodania"> X
+            </button>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
