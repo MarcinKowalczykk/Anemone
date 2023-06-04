@@ -107,14 +107,14 @@
     line-height: 1.2;
     color: var(--text-color);
     letter-spacing: normal;
-    width: calc(100%-48px);
+    width: calc(100% - 48px);
     @media screen and (min-width: 768) {
       font-size: 24px;
-      width: calc(100%-84px);
+      width: calc(100% - 84px);
     }
     @media screen and (min-width: 1280) {
       font-size: 32px;
-      width: calc(100%-120px);
+      width: calc(100% - 120px);
     }
   }
   &__photo {
