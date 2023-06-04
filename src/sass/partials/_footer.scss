@@ -1,8 +1,8 @@
 .footer {
   list-style: none;
-  background-color: var(--text-color);
-  color: var(--primary-white-color);
-  font-family: var(--font-secondary);
+  background-color: $text-color;
+  color: $primary-white-color;
+  font-family: $font-secondary;
   padding: 32px 16px;
   display: flex;
   flex-wrap: wrap;
@@ -23,7 +23,7 @@
       padding-right: 124px;
     }
     &--icon {
-      fill: var(--primary-white-color);
+      fill: $primary-white-color;
     }
   }
   &__list {
@@ -51,7 +51,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
-    color: var(--primary-white-color);
+    color: $primary-white-color;
     text-decoration: none;
     @media screen and (min-width: 768px) {
       font-size: 16px;
@@ -88,6 +88,6 @@
     }
   }
   &__icon {
-    fill: var(--primary-white-color);
+    fill: $primary-white-color;
   }
 }
