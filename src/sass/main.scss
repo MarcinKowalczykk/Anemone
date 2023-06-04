@@ -5,6 +5,9 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './partials/vars';
-@import './partials/buttons';
+
+@import './_global-styles';
+
 @import './partials/footer';
 @import './partials/delivery';
+
