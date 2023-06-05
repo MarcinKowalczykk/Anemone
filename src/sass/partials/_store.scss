@@ -44,8 +44,6 @@
       font-size: 36px;
       margin-top: 18px;
     }
-    &::after {
-      display: none;
       &::after {
         @media screen and (min-width: 768px) {
           content: '';
@@ -55,7 +53,7 @@
           display: inline-block;
         }
       }
-    }
+    
   }
   &__price {
     display: block;
