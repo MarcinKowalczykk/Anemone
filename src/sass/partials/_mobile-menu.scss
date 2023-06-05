@@ -1,0 +1,126 @@
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  max-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 15px 10px 284px;
+  cursor: pointer;
+  background-color: $primary-white-color;
+  border: none;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    fill: rgba(0, 0, 0, 0.6);
+    transition-property: color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+    visibility: hidden;
+    margin-top: 21px;
+    margin-right: 25.33px;
+    &:hover,
+    &:focus {
+      color: rgba(0, 0, 0, 0.6);
+      fill: rgba(0, 0, 0, 0.6);
+      transition-property: color, transform;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  min-width: 320px;
+  background-color: $primary-orange-color;
+  z-index: 999;
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    //   color: #fff;
+    border: black;
+  }
+
+  .mobile-menu {
+    padding: 48px;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      margin: auto;
+      margin-top: 90px;
+      list-style: none;
+      & li:nth-child(n + 2) {
+        padding-top: 26px;
+      }
+    }
+
+    &__link {
+      display: block;
+      color: $primary-white-color;
+      text-decoration: none;
+      font-family: $font-primary;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.2;
+      &:hover,
+      &:focus {
+        color: $primary-white-color;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+
+      & li:nth-child(n + 2) {
+        padding-top: 36px;
+      }
+    }
+  }
+}
