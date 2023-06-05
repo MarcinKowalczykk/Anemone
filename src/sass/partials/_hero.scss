@@ -14,15 +14,15 @@
     margin-right: 14px;
   }
   &__button {
-    background-color: #fff;
+    background-color: $primary-white-color;
     width: 76px;
     height: 76px;
-    fill: #000;
+    fill: $text-color;
   }
   &__icon {
     width: 76px;
     height: 76px;
-    background-color: #fff;
+    background-color: $primary-white-color;
     margin-left: 8px;
   }
   &__iconbox {
