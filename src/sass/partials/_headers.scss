@@ -43,7 +43,6 @@
       gap: 16px;
     }
   }
- 
 }
 
 .store {
@@ -55,6 +54,12 @@
     text-align: left;
     @media (min-width: 768px) {
       font-size: 32px;
+      width: 100%;
+      display: inline-flex;
+      white-space: nowrap;
+      align-items: center;
+      gap: 8px;
+
       &::after {
         display: none;
         @media (min-width: 768px) {
@@ -68,6 +73,7 @@
     }
     @media (min-width: 1280px) {
       font-size: 36px;
+      gap: 16px;
     }
-  } 
+  }
 }
