@@ -25,6 +25,10 @@
     display: block;
     width: 100%;
     height: auto;
+    margin-bottom: 12px;
+    @media screen and (min-widht: 768px) {
+      margin-bottom: 16px;
+    }
   }
   &__name {
     font-family: $font-primary;
