@@ -86,18 +86,17 @@ img {
 }
 
 .button {
-
-    display: block;
-    font-family: $font-primary;
-    color: $primary-white-color;
-    font-weight: 500;
-    line-height: 24px;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    background-color: $primary-orange-color;
-    border: none;
-    border-radius: 38px;
+  display: block;
+  font-family: $font-primary;
+  color: $primary-white-color;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: $primary-orange-color;
+  border: none;
+  border-radius: 38px;
 
   display: block;
   font-family: $font-primary;
@@ -164,13 +163,11 @@ img {
     padding: 14px 0;
   }
   &--active {
-
     &:hover {
       background-color: $hover-orange-color;
     }
     &:focus {
       background-color: $focus-orange-color;
-
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
       width: 208px;
@@ -197,7 +194,7 @@ img {
       width: 280px;
     }
   }
-  
+
   .button-popup {
     display: block;
     width: 240px;
@@ -249,25 +246,22 @@ img {
       line-height: 22px;
       padding: 14px 0;
 
-    &:hover {
-      $hover-orange-color: #e25b41;
+      &:hover {
+        $hover-orange-color: #e25b41;
+      }
+      &:focus {
+        background-color: $focus-orange-color;
+      }
     }
-    &:focus {
-      background-color: $focus-orange-color;
 
+    @media screen and (min-width: 768px) {
+      width: 416px;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 14px 0;
     }
   }
-
-  @media screen and (min-width: 768px) {
-    width: 416px;
-    font-size: 18px;
-    line-height: 22px;
-    padding: 14px 0;
-
-  }
 }
-
-}
-body{
+body {
   position: absolute;
 }
