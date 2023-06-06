@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   background-color: $text-color;
-  padding-left: 32px 16px;
   @media screen and (min-width: 1280px) {
     display: block;
   }
@@ -52,7 +51,7 @@
       font-size: 20px;
     }
     &--space {
-      padding-right: 33px;
+      padding-right: 12px;
       @media screen and (min-width: 768px) {
         padding-right: 0;
       }
@@ -70,7 +69,7 @@
     }
   }
   &__contacts {
-    width: 140px;
+    width: 131px;
     @media screen and (min-width: 768px) {
       width: 236px;
     }
@@ -90,7 +89,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    padding-right: 75px;
+    padding-right: 55px;
     @media screen and (min-width: 768px) {
       flex-direction: column;
       padding-left: 30px;
