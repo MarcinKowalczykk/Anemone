@@ -38,6 +38,7 @@ img {
 
 .container {
   display: grid;
+  justify-content: space-around;
 }
 
 .section {
@@ -262,6 +263,8 @@ img {
     }
   }
 }
-body {
+
+}
+body{
   position: absolute;
 }
