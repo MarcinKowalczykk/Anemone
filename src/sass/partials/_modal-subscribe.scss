@@ -23,6 +23,10 @@
     width: 588px;
   }
   @media screen and (min-width: 1280px) {
+
+    width: 860px;
+    display: flex;
+
   }
 
   &--picture {
@@ -30,6 +34,12 @@
     @media screen and (min-width: 768px) {
       width: 588px;
     }
+
+    @media screen and (min-width: 1280px) {
+      width: 428px;
+      height: 528px;
+    }
+
   }
 
   &__body {
@@ -39,6 +49,11 @@
       padding: 28px 126px 40px 126px;
       width: 336;
     }
+
+    @media screen and (min-width: 1280px) {
+     
+    }
+
   }
 
   &__header {
@@ -96,16 +111,27 @@
 }
 
 .modal-sub__close-btn {
-  width: 18px;
-  height: 18px;
-  padding: 0;
-  background-color: inherit;
+
+  // width: 18px;
+  // height: 18px;
+  // padding: 0;
+  background-color: transparent;
   stroke: $text-color;
-  position: static;
+  position: fixed;
   top: 17px;
   right: 17px;
+  border: none;
+  @media screen and (min-width: 768px) {
+    top: 17px;
+    right: 17px;
+  }
   &--image {
     width: 18px;
     height: 18px;
+    @media screen and (min-width: 768px) {
+      width: 24px;
+      height: 24px;
+    }
+
   }
 }
