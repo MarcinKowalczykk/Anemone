@@ -31,15 +31,22 @@
   align-items: center;
   top: 19px;
   right: 19px;
-  width: 18px;
-  height: 18px;
   padding: 3px;
   background-color: $primary-white-color;
   color: $text-color;
   cursor: pointer;
   border: none;
+
   & svg {
-    fill: $text-color;
+    stroke: $text-color;
+    width: 18px;
+    height: 18px;
+    padding: 3px;
+    @media screen and (min-width: 768px) {
+      width: 24px;
+      height: 24px;
+      padding: 4px;
+    }
   }
 }
 
@@ -118,8 +125,8 @@
   }
 }
 
-// .is-hidden {
-//   opacity: 0;
-//   //   visibility: hidden;
-//   pointer-events: none;
-// }
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
