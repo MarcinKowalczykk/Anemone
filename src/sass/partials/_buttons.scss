@@ -79,7 +79,15 @@
     width: 236px;
     font-size: 14px;
     line-height: 17px;
-    padding: 10px 0;
+    padding: 10px 82px;
+    color: $primary-white-color;
+    background-color: $primary-orange-color;
+    border: none;
+    border-radius: 8px;
+    @media screen and (min-width: 768px) {
+      width: 336px;
+      padding: 14px 122px;
+    }
     &:hover {
       background-color: $hover-orange-color;
     }

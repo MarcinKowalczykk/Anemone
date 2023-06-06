@@ -1,0 +1,111 @@
+.subscribe {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow-y: scroll;
+  opacity: 1;
+}
+
+.modal-sub {
+  display: block;
+  width: 272px;
+  min-height: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $primary-white-color;
+  @media screen and (min-width: 768px) {
+    width: 588px;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+
+  &--picture {
+    width: 272px;
+    @media screen and (min-width: 768px) {
+      width: 588px;
+    }
+  }
+
+  &__body {
+    padding: 18px 18px 28px 18px;
+    background-color: $primary-white-color;
+    @media screen and (min-width: 768px) {
+      padding: 28px 126px 40px 126px;
+      width: 336;
+    }
+  }
+
+  &__header {
+    margin: 0;
+    font-family: $font-primary;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $text-color;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    padding-top: 14px;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    color: $secondary-text-color;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      padding-top: 24px;
+      font-size: 16px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: 8px;
+    padding-top: 18px;
+    font-family: $font-primary;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2;
+    @media screen and (min-width: 768px) {
+      padding-top: 32px;
+    }
+  }
+
+  &__button {
+    padding-top: 28px;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+      padding-top: 38px;
+    }
+  }
+}
+
+.modal-sub__close-btn {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  background-color: inherit;
+  stroke: $text-color;
+  position: static;
+  top: 17px;
+  right: 17px;
+  &--image {
+    width: 18px;
+    height: 18px;
+  }
+}
