@@ -92,9 +92,25 @@
       font-size: 32px;
       width: 101px;
     }
+    &__header-block {
+      display: flex;
+      justify-content: center;
+    }
     &__header {
       font-size: 160px;
       top: -102px;
+      animation: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both focus-in-contract;
+    }
+    &__header-line {
+      content: '';
+      width: 58px;
+      height: 8px;
+      background-color: #0e0e0e;
+      display: flex;
+      position: relative;
+      bottom: 80px;
+      left: 860px;
+      animation: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both focus-in-contract;
     }
   }
 }
