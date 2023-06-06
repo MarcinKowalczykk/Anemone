@@ -1,9 +1,4 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
 
-// Style dla pliku z przykładem HTML fragmentu
 @import './partials/vars';
 @import './partials/headers';
 @import './partials/buttons';
@@ -14,6 +9,10 @@
 @import './partials/delivery';
 @import './partials/blog';
 @import './partials/footer';
-@import './partials/vars';
-@import './_global-styles';
+// @import './partials/input';
+@import './partials/mobile-menu';
+@import './partials/modal-contact-us';
+
+
+
 
