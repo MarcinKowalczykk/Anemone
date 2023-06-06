@@ -1,0 +1,135 @@
+.backdrop {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow-y: scroll;
+  opacity: 1;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  width: 272px;
+  min-height: 357px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $primary-white-color;
+  @media screen and (min-width: 768px) {
+    width: 480px;
+    min-height: 511px;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  align-items: center;
+  top: 19px;
+  right: 19px;
+  padding: 3px;
+  background-color: $primary-white-color;
+  color: $text-color;
+  cursor: pointer;
+  border: none;
+
+  & svg {
+    stroke: $text-color;
+    width: 18px;
+    height: 18px;
+    padding: 3px;
+    @media screen and (min-width: 768px) {
+      width: 24px;
+      height: 24px;
+      padding: 4px;
+    }
+  }
+}
+
+.modal {
+  &__form {
+    padding: 28px 16px;
+    @media screen and (min-width: 768px) {
+      padding: 48px 32px;
+    }
+  }
+
+  &__header {
+    font-family: $font-primary;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: bold;
+    line-height: 1.2;
+    text-align: left;
+    padding-bottom: 14px;
+    @media screen and (min-width: 768px) {
+      font-size: 23px;
+      line-height: 1.21;
+      padding-bottom: 24px;
+    }
+  }
+
+  &__body {
+    font-family: $font-primary;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: left;
+    color: $secondary-text-color;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+  &__description {
+    margin: 0;
+  }
+
+  &__list {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-top: 18px;
+    @media screen and (min-width: 768px) {
+      padding-top: 32px;
+    }
+
+    &__item {
+      font-family: $font-primary;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 1.2;
+      text-align: left;
+      @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.21;
+      }
+    }
+    &__item:nth-child(2) {
+      padding-top: 14px;
+      @media screen and (min-width: 768px) {
+        padding-top: 29px;
+      }
+    }
+  }
+}
+
+.button-container {
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+  @media screen and (min-width: 768px) {
+    padding-top: 38px;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
