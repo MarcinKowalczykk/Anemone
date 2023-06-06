@@ -1,10 +1,9 @@
 <div class="menu-container js-menu-container" id="mobile-menu">
   <div class="mobile-menu">
-    <button class="menu-toggle js-close-menu" id="menu-toggle">
-      x
-      <!-- <svg class="icon-close">
-        <use href=".images/icons.svg#icon-tel"></use>
-      </svg> -->
+    <button class="js-close-menu" id="menu-toggle">
+      <svg class="icon-close">
+        <use href="./images/icons.svg#icon-close-icon"></use>
+      </svg>
     </button>
 
     <ul class="mobile-menu__list">
@@ -16,3 +15,13 @@
     </ul>
   </div>
 </div>
+
+<button
+  class="hamburger hamburger--collapse js-open-menu mobile-menu__btn"
+  type="button"
+  aria-expanded="false"
+  aria-controls="mobile-menu"
+  aria-label="modal window toggle"
+>
+  <span class="hamburger-box"> <span class="hamburger-inner"></span> </span>
+</button>
