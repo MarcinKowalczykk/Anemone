@@ -3,7 +3,7 @@
   &__logo {
     width: 45px;
     height: 35px;
-    fill: #0e0e0e;
+    fill: #000;
   }
   &__container {
     display: flex;
@@ -23,18 +23,18 @@
   }
 
   &__icon {
-    width: 24px;
+  width: 24px;
     height: 24px;
     padding: 1px;
-    fill: #0e0e0e;
+    fill: #000;
     background-color: #fff;
     border: none;
   }
   &__icon-burger {
     width: 24px;
     height: 24px;
-    fill: #0e0e0e;
-    // background-color: #fff;
+    fill: #000;
+    background-color: #fff;
   }
 }
 @media screen and (min-width: 768px) {
@@ -44,10 +44,14 @@
       width: 72px;
       height: 57px;
     }
+    &__container {
+      justify-content: center;
+    }
     &__list {
       display: flex;
       justify-content: space-between;
       gap: 24px;
+      padding: 0 76px 0 80px;
     }
     &__link {
       font-weight: 400;
@@ -55,6 +59,7 @@
       line-height: 1.2;
       color: $text-color;
       text-decoration: none;
+
     }
     &__icon-burger {
       display: none;
@@ -68,10 +73,14 @@
       width: 72px;
       height: 57px;
     }
+    &__container {
+      justify-content: center;
+    }
     &__list {
       display: flex;
       justify-content: space-between;
       gap: 48px;
+      padding: 0 308px 0 261px;
     }
     &__link {
       font-weight: 400;
