@@ -1,10 +1,6 @@
-body {
-  padding: 0 16px;
-  @media (min-width: 768px) {
-    padding: 0 24px;
-  }
-}
 .section {
+  margin: 0 auto;
+  max-width: 1280px;
   padding-top: 60px;
   @media (min-width: 768px) {
     padding-top: 100px;
@@ -23,23 +19,26 @@ body {
       font-size: 44px;
       gap: 16px;
     }
-  }
-  &::after {
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: $text-color;
-    display: inline-block;
+    &::after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: $text-color;
+      display: inline-block;
+    }
   }
   &__about {
     display: block;
-    padding-top: 32px;
     @media (min-width: 768px) {
       display: flex;
+      align-items: center;
+    }
+    @media (min-width: 1280px) {
+      justify-content: space-between;
     }
   }
   &__about-us {
-    width: 288px;
+    max-width: 288px;
     height: 140px;
     font-weight: 400;
     font-size: 16px;
@@ -47,7 +46,7 @@ body {
     color: $text-color;
     margin-bottom: 16px;
     @media (min-width: 768px) {
-      width: 322px;
+      max-width: 322px;
       height: 168px;
       font-size: 20px;
       line-height: 1.2;
@@ -56,7 +55,7 @@ body {
       margin-bottom: 23px;
     }
     @media (min-width: 1280px) {
-      width: 510px;
+      max-width: 510px;
       height: 135px;
       font-size: 22px;
       line-height: 1.22;
@@ -66,8 +65,9 @@ body {
     }
   }
   &__about-img {
-    width: 288px;
-    height: 178px;
+    width: 100%;
+    height: auto;
+    display: block;
     border-radius: 0px 639.5px 639.5px 0px;
     @media (min-width: 768px) {
       width: 344px;
