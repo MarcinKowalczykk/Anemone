@@ -1,0 +1,100 @@
+.hero {
+  padding-top: 44px;
+  &__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $text-color;
+    width: 46px;
+    margin-right: 14px;
+  }
+  &__button {
+    background-color: $primary-white-color;
+    width: 76px;
+    height: 76px;
+    fill: $text-color;
+  }
+  &__icon {
+    width: 76px;
+    height: 76px;
+    background-color: $primary-white-color;
+    margin-left: 8px;
+  }
+  &__iconbox {
+    display: flex;
+    gap: 14px;
+  }
+  &__header {
+    text-align: center;
+    color: $text-color;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.2;
+    position: relative;
+    top: -27px;
+  }
+  &__img {
+    width: 145px;
+    height: 274px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 38px;
+    &__button {
+      width: 145px;
+      height: 150px;
+    }
+    &__icon {
+      width: 145px;
+      height: 150px;
+      margin-left: 20px;
+    }
+    &__img {
+      width: 390px;
+      height: 636px;
+    }
+    &__title {
+      font-size: 24px;
+      width: 76px;
+      margin-right: 40px;
+    }
+    &__header {
+      font-size: 120px;
+      top: -52px;
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 64px;
+    &__block {
+      gap: 110px;
+    }
+    &__button {
+      width: 166px;
+      height: 166px;
+    }
+    &__icon {
+      width: 166px;
+      height: 166px;
+    }
+    &__img {
+      width: 390px;
+      height: 636px;
+    }
+    &__title {
+      font-size: 32px;
+      width: 101px;
+    }
+    &__header {
+      font-size: 160px;
+      top: -102px;
+    }
+  }
+}
