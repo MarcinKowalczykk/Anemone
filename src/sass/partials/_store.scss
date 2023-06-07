@@ -78,11 +78,11 @@
       margin-top: 4px;
     }
     &--padding {
-      @media screen and (min-width: 768px) and (max-width: 1199px) {
+      @media screen and (min-width: 768px) and (max-width: 1279px) {
         padding-bottom: 8px;
       }
 
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1280px) {
         padding-bottom: 32px;
       }
     }
