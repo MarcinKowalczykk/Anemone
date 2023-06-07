@@ -1,6 +1,39 @@
-<div data-modal1 class="subscribe">
+<div data-modal1 class="subscribe is-hidden">
   <div class="modal-sub">
-    <img
+    <picture class="modal-sub--picture">
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          ./images/modal-subscribe-desktop@1x.jpg 1x,
+          ./images/modal-subscribe-desktop@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
+      <source
+        media="(min-width:768px)"
+        srcset="
+          ./images/modal-subscribe-tablet@1x.jpg 1x,
+          ./images/modal-subscribe-tablet@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
+      <source
+        media="(max-width:767px)"
+        srcset="
+          ./images/modal-subscribe-mobile@1x.jpg 1x,
+          ./images/modal-subscribe-mobile@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
+      <img
+        src="./images/modal-subscribe-mobile@1x.jpg"
+        alt="stylish bouquet of flowers"
+        loading="lazy"
+        max-width="428"
+        max-height="528"
+      />
+    </picture>
+    <!-- <img
       class="modal-sub--picture"
       src="./images/modal-subscribe-mobile@1x.jpg"
       srcset="
@@ -12,7 +45,7 @@
       "
       alt="bouquet of flowers"
       sizes="(min-width: 768px) 588px, (min-width: 1280px) 428px, 100vw"
-    />
+    /> -->
     <button type="button" class="modal-sub__close-btn" data-modal-close1>
       <svg class="modal-sub__close-btn--image">
         <use href="./images/icons.svg#icon-close-icon"></use>
