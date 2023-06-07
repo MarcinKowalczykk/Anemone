@@ -9,8 +9,6 @@
     menuBtn.setAttribute('aria-expanded', !isMenuOpen);
     menuBtn.classList.toggle('is-active');
     mobileMenu.classList.toggle('is-open');
-    const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
   };
 
   menuBtn.addEventListener('click', toggleMenu);
@@ -24,6 +22,5 @@
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     menuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
