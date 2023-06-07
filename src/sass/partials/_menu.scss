@@ -7,7 +7,7 @@
   min-height: 60px;
   background: $primary-white-color;
   padding-top: 16px;
-  // margin: 0 auto;
+  margin: 0 auto;
 }
 
 .menu {
@@ -100,9 +100,15 @@
     &__list {
       display: flex;
       justify-content: space-between;
+      justify-content: center;
+      align-items: center;
       gap: 48px;
+      & a {
+        list-style: none;
+      }
     }
     &__link {
+      display: list-item;
       font-weight: 400;
       font-size: 20px;
       line-height: 1.2;
