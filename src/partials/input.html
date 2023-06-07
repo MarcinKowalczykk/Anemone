@@ -6,9 +6,9 @@
       class="modal__input"
       type="text"
       name="name"
-      placeholder="Kristin Watson"
-      required
-      pattern="[A-Za-z ]{1,32}"
+      placeholder="Your name"
+      required minlength="2"
+      pattern="\w{3,16}"
   /></label>
 
   <label class="modal__label"
@@ -16,7 +16,7 @@
       class="modal__input"
       type="email"
       name="email"
-      placeholder="tanya.hill@example.com"
+      placeholder="Your email"
       required
       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
       title="Musisz podać poprawny adres
