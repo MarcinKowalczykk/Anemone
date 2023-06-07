@@ -13,11 +13,15 @@
     margin-right: 14px;
   }
   &__button {
-    background-color: $primary-white-color;
-    width: 76px;
-    height: 76px;
-    fill: $text-color;
-    border: none;
+    margin-left: 8px;
+  background-color: transparent;
+  border: none;
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 110px;
+  }
   }
   &__icon {
     width: 76px;
@@ -110,5 +114,23 @@
       left: 860px;
       animation: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both focus-in-contract;
     }
+  }
+}
+.shopnow-m {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.shopnow-t {
+  display: none;
+  @media screen and (min-width: 768px) and (max-width: 1279.99px) {
+    display: block;
+  }
+}
+.shopnow-d {
+  display: none;
+  @media screen and (min-width: 1280px) 
+  {
+display: block;
   }
 }
