@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 110vw;
+  width: 100vw;
   z-index: 9999;
   min-height: 60px;
   background: $primary-white-color;
@@ -11,21 +11,24 @@
 }
 
 .menu {
+  margin-left: 0;
   background: $primary-white-color;
-  width: 90vw;
+  width: 100vw;
+
   &__logo {
     width: 54px;
     height: 42px;
-
     fill: #000;
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       width: 86px;
       height: 68px;
+      padding-left: 24px;
     }
 
     @media screen and (min-width: 1280px) {
       width: 86px;
       height: 68px;
+      padding-left: 24px;
     }
   }
 
@@ -73,6 +76,9 @@
 }
 @media screen and (min-width: 768px) {
   .menu {
+    margin-left: auto;
+    margin-right: auto;
+
     &__container {
       justify-content: center;
     }
@@ -95,6 +101,8 @@
 }
 @media screen and (min-width: 1280px) {
   .menu {
+    margin-left: auto;
+    margin-right: auto;
     &__container {
       justify-content: center;
     }

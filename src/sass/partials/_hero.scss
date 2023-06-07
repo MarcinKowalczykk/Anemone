@@ -14,20 +14,18 @@
   }
   &__button {
     margin-left: 8px;
-  background-color: transparent;
-  border: none;
-  @media screen and (min-width: 768px) {
-  
-  }
-  @media screen and (min-width: 1280px) {
-   
-  }
+
+    background-color: transparent;
+    border: none;
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1280px) {
+    }
   }
   &__icon {
-    width: 76px;
+    width: 64px;
     height: 76px;
     background-color: $primary-white-color;
-    margin-left: 8px;
   }
   &__iconbox {
     display: flex;
@@ -95,15 +93,18 @@
       font-size: 32px;
       width: 101px;
     }
+
     &__header-block {
       display: flex;
       justify-content: center;
     }
+
     &__header {
       font-size: 160px;
       top: -102px;
       animation: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both focus-in-contract;
     }
+
     &__header-line {
       content: '';
       width: 58px;
@@ -130,16 +131,9 @@
 }
 .shopnow-d {
   display: none;
-  @media screen and (min-width: 1280px) 
-  {
-display: block;
+  @media screen and (min-width: 1280px) {
+    display: block;
   }
 }
-.hero-container{
-  padding-left: 48px;
-  padding-right: 0;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    
-  
-  }
-}
+
+// commit try 4
