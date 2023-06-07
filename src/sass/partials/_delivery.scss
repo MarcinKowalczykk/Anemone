@@ -1,25 +1,26 @@
-.delivery {
+.section__delivery {
   display: flex;
   flex-direction: column;
   padding-bottom: 26px;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-bottom: 40px;
   }
-
   @media screen and (min-width: 1280px) {
     padding-bottom: 60px;
   }
-
+}
+.delivery {
   &__list {
     display: flex;
     gap: 8px;
     flex-direction: column;
     margin-bottom: 26px;
-    @media screen and (min-width: 768) {
+
+    @media screen and (min-width: 768px) {
       margin-bottom: 40px;
       gap: 20px;
     }
-    @media screen and (min-width: 1280) {
+    @media screen and (min-width: 1280px) {
       margin-bottom: 60px;
       gap: 32px;
     }
@@ -37,11 +38,11 @@
     align-items: center;
     width: 100%;
     min-height: 51px;
-    @media screen and (min-width: 768) {
+    @media screen and (min-width: 768px) {
       gap: 20px;
       font-size: 24px;
     }
-    @media screen and (min-width: 1280) {
+    @media screen and (min-width: 1280px) {
       gap: 56px;
       font-size: 32px;
     }
@@ -62,7 +63,7 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
-    @media screen and (min-width: 768) {
+    @media screen and (min-width: 768px) {
       gap: 20;
       font-size: 26px;
       width: 64px;
@@ -78,11 +79,11 @@
     color: $text-color;
     letter-spacing: normal;
     width: calc(100% - 48px);
-    @media screen and (min-width: 768) {
+    @media screen and (min-width: 768px) {
       font-size: 24px;
       width: calc(100% - 84px);
     }
-    @media screen and (min-width: 1280) {
+    @media screen and (min-width: 1280px) {
       font-size: 32px;
       width: calc(100% - 120px);
     }
