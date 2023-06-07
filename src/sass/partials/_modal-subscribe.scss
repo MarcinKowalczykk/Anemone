@@ -25,110 +25,107 @@
   @media screen and (min-width: 1280px) {
     width: 860px;
     display: flex;
+  }
 
-    &--picture {
-      width: 272px;
-      @media screen and (min-width: 768px) {
-        width: 588px;
-      }
-
-      @media screen and (min-width: 1280px) {
-        object-fit: cover;
-      }
-      & img {
-        max-width: 100%;
-        height: 100%;
-      }
+  &--picture {
+    width: 272px;
+    @media screen and (min-width: 768px) {
+      width: 588px;
     }
 
-    &__body {
-      padding: 18px 18px 28px 18px;
-      background-color: $primary-white-color;
-      @media screen and (min-width: 768px) {
-        padding: 28px 126px 40px 126px;
-        width: 336;
-      }
+    @media screen and (min-width: 1280px) {
+      object-fit: cover;
+    }
+    & img {
+      max-width: 100%;
+      height: 100%;
+    }
+  }
 
-      @media screen and (min-width: 1280px) {
-        width: 432px;
-        padding: 111px 40px 112px 40px;
-      }
+  &__body {
+    padding: 18px 18px 28px 18px;
+    background-color: $primary-white-color;
+    @media screen and (min-width: 768px) {
+      padding: 28px 126px 40px 126px;
+      width: 336;
     }
 
-    &__header {
-      margin: 0;
-      font-family: $font-primary;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 1.2;
-      color: $text-color;
-      text-align: center;
-      @media screen and (min-width: 768px) {
-        font-size: 26px;
-      }
-      @media screen and (min-width: 1280px) {
-        font-size: 28px;
-      }
+    @media screen and (min-width: 1280px) {
+      width: 432px;
+      padding: 111px 40px 112px 40px;
+    }
+  }
+
+  &__header {
+    margin: 0;
+    font-family: $font-primary;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $text-color;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 28px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    padding-top: 14px;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    color: $secondary-text-color;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      padding-top: 24px;
+      font-size: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 18px;
+    font-family: $font-primary;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2;
+    @media screen and (min-width: 768px) {
+      padding-top: 32px;
     }
 
-    &__text {
-      margin: 0;
-      padding-top: 14px;
-      font-family: $font-primary;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 1.33;
-      color: $secondary-text-color;
-      text-align: center;
-      @media screen and (min-width: 768px) {
-        padding-top: 24px;
-        font-size: 16px;
-      }
-      @media screen and (min-width: 1280px) {
-        padding-left: 8px;
-        padding-right: 8px;
-      }
+    @media screen and (min-width: 1280px) {
+      padding-left: 8px;
+      padding-right: 8px;
     }
+  }
 
-    &__form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 8px;
-      padding-top: 18px;
-      font-family: $font-primary;
-      font-weight: 500;
-      font-size: 10px;
-      line-height: 1.2;
-      @media screen and (min-width: 768px) {
-        padding-top: 32px;
-      }
-
-      @media screen and (min-width: 1280px) {
-        padding-left: 8px;
-        padding-right: 8px;
-      }
+  &__button {
+    padding-top: 28px;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+      padding-top: 38px;
     }
-
-    &__button {
-      padding-top: 28px;
-      align-items: center;
-      justify-content: center;
-      @media screen and (min-width: 768px) {
-        padding-top: 38px;
-      }
-      @media screen and (min-width: 1280px) {
-        padding-left: 8px;
-        padding-right: 8px;
-      }
+    @media screen and (min-width: 1280px) {
+      padding-left: 8px;
+      padding-right: 8px;
     }
   }
 }
 
 .modal-sub__close-btn {
-  // width: 18px;
-  // height: 18px;
-  // padding: 0;
   background-color: transparent;
   stroke: $text-color;
   position: fixed;

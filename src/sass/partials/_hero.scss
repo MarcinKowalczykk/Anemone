@@ -14,20 +14,18 @@
   }
   &__button {
     margin-left: 8px;
-  background-color: transparent;
-  border: none;
-  @media screen and (min-width: 768px) {
-    margin-left: 20px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-left: 110px;
-  }
+
+    background-color: transparent;
+    border: none;
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1280px) {
+    }
   }
   &__icon {
-    width: 76px;
+    width: 64px;
     height: 76px;
     background-color: $primary-white-color;
-    margin-left: 8px;
   }
   &__iconbox {
     display: flex;
@@ -129,8 +127,14 @@
 }
 .shopnow-d {
   display: none;
-  @media screen and (min-width: 1280px) 
-  {
-display: block;
+  @media screen and (min-width: 1280px) {
+    display: block;
   }
 }
+// .hero-container{
+//   padding-left: 48px;
+//   padding-right: 0;
+//   @media screen and (min-width: 768px) and (max-width: 1279px) {
+
+//   }
+// }

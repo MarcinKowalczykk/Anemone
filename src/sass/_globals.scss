@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -16,9 +17,10 @@ img {
 svg {
   display: block;
 }
+
 input {
-  border: none;
-  outline: none;
+  border: 1;
+  outline: 1;
 }
 input:hover {
   outline: none;
@@ -42,7 +44,7 @@ ul {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 15px;
   &--top {
     background: $primary-white-color;
   }
