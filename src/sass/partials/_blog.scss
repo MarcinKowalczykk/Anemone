@@ -73,6 +73,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 :root {
   --swiper-theme-color: #007aff;
 }
@@ -85,6 +86,7 @@
   padding: 0;
   z-index: 1;
 }
+
 .swiper-vertical > .swiper-wrapper {
   flex-direction: column;
 }
