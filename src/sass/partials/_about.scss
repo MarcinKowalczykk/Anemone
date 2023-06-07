@@ -1,11 +1,22 @@
 .section__about {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin: 0;
+
   @media (min-width: 768px) {
-    display: flex;
-    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 54px;
   }
   @media (min-width: 1280px) {
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 90px;
   }
 }
 .section__about-us {
@@ -36,9 +47,8 @@
   }
 }
 .section__about-img {
-  width: 100%;
-  height: auto;
-  display: block;
+  width: 288px;
+  height: 178px;
   border-radius: 0px 639.5px 639.5px 0px;
   @media (min-width: 768px) {
     width: 344px;
