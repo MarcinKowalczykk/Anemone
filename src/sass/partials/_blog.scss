@@ -23,17 +23,14 @@
   display: inline-flex;
   text-transform: uppercase;
 }
-.line {
-  display: block;
-  width: 100%;
-  position: relative;
-  bottom: 27px;
+
+.slider {
+  padding: 0 0 103px 0;
 }
 
 .slide-container {
   max-width: 1232px;
   width: 100%;
-  padding: 122px 0 103px 0;
 }
 .slide-content {
   overflow: hidden;

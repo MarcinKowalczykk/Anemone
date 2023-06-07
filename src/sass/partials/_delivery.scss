@@ -1,6 +1,14 @@
 .delivery {
   display: flex;
   flex-direction: column;
+  padding-bottom: 26px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+  }
 
   &__list {
     display: flex;
@@ -79,5 +87,4 @@
       width: calc(100% - 120px);
     }
   }
-  
 }

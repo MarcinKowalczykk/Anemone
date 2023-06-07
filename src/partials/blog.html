@@ -11,27 +11,26 @@ JavaScript
 
 <section class="blog section" id="blog">
   <div class="container">
-    <div class="section__title">
-      <h2 class="section__title">Blog</h2>
-    </div>
+    <h2 class="section__title section__title--blog-padding">Blog</h2>
+    <div class="slider">
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image-content">
+                <img
+                  class="card-img"
+                  src="images/flowers-image2-desktop@1x.jpg"
+                  srcset="
+                    ./images/flowers-image2-mobile@1x.jpg  136w,
+                    ./images/flowers-image2-mobile@2x.jpg  272w,
+                    ./images/flowers-image2-tablet@1x.jpg  344w,
+                    ./images/flowers-image2-tablet@2x.jpg  688w,
+                    ./images/flowers-image2-desktop@1x.jpg 390w,
+                    ./images/flowers-image2-desktop@2x.jpg 780w
+                  "
+                  sizes="
 
-    <div class="slide-container swiper">
-      <div class="slide-content">
-        <div class="card-wrapper swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="image-content">
-              <img
-                class="card-img"
-                src="images/flowers-image2-desktop@1x.jpg"
-                srcset="
-                  ./images/flowers-image2-mobile@1x.jpg  136w,
-                  ./images/flowers-image2-mobile@2x.jpg  272w,
-                  ./images/flowers-image2-tablet@1x.jpg  344w,
-                  ./images/flowers-image2-tablet@2x.jpg  688w,
-                  ./images/flowers-image2-desktop@1x.jpg 390w,
-                  ./images/flowers-image2-desktop@2x.jpg 780w
-                "
-                sizes="
                         (max-width: 767px) 136px,  
                         (max-width: 1199px) 344px, 688w"
                 alt="Flowers with olive petals on a gray background"
@@ -204,6 +203,10 @@ JavaScript
       <div class="swiper-button-prev"></div>
     </div>
     <h3 class="header-blog-newsletter">Follow to our newsletter</h3>
-    <button class="button" data-modal-open1>Subscribe</button>
+
+    <div class="btn--position">
+      <button class="button" data-modal-open1>Subscribe</button>
+    </div>
+
   </div>
 </section>
